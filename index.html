@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDFShift</title>
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Starting of Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">PDFShift<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="converterLogo.png" alt="" class="img-fluid"></a> -->
+
+      <!-- ======= Starting of Navbar ======= -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">FAQs</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>PDF Conveters</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <!-- <li class="dropdown"><a href="#"><span>PDF Converter</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="Converter/PDF to Audio Book/PdfToAudio.html">PDF to AudioBook</a></li>
+                  <li><a href="#">PDF to Jpeg</a></li>
+                  <li><a href="#">PDF to Docx</a></li>
+                  <li><a href="#">Docx to PDF</a></li>
+                  <li><a href="#">PDF to Long Image</a></li>
+                </ul>
+              </li> -->
+              <li><a href="Converter/PDF to Audio Book/PdfToAudio.html">PDF to AudioBook / Speech</a></li>
+              <li><a href="#">Text to Speech / Audio</a></li>
+              <li><a href="#">Speech / Audio to Text</a></li>
+              <li><a href="#">Speech / Audio to PDF</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>  <!-- End of Navbar -->
+
+      <!-- <a href="#about" class="login-button scrollto">Get Started</a> -->
+      <a href="#" class="login-button scrollto" id="LoginBtn"><span>Login</span><i></i></a>
+
+    </div>
+  </header> <!-- End of Header -->
+
+  <!-- ======= Starting of Homepage Background Video  ======= -->
+  <!-- <video src="bg-video.mp4" type="video/mp4" id="background-video" autoplay muted loop></video> -->
+  <!-- End of Homepage Background Video  -->
+
+  <!-- ======= Starting of Login Form  ======= -->
+  <div id="login-form-main-container">
+    <div class="contain" id="contain">
+        <div class="form-contain sign-up-contain">
+            <form action="#" class="login-form">
+              <div id="login-close2"><i class="bi bi-x-lg"></i></div>
+                <h1 class="login-h1">Create Account</h1>
+                <div class="social-contain">
+                    <a href="#" class="social login-a"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social login-a"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social login-a"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span class="login-span">or use your email for registration</span>
+                <input class="login-input" type="text" placeholder="Name" />
+                <input class="login-input" type="email" placeholder="Email" />
+                <input class="login-input" type="password" placeholder="Password" />
+                <button class="login-buttons">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-contain sign-in-contain">
+            <form action="#" class="login-form">
+                <h1 class="login-h1">Sign in</h1>
+                <div class="social-contain">
+                    <a href="#" class="social login-a"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social login-a"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social login-a"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span class="login-span">or use your account</span>
+                <input class="login-input" type="email" placeholder="Email" />
+                <input class="login-input" type="password" placeholder="Password" />
+                <a href="#" class="login-a">Forgot your password?</a>
+                <button class="login-buttons">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-contain">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1 class="login-h1">Welcome Back!</h1>
+                    <p class="login-p">To keep connected with us please login with your personal info</p>
+                    <button class="ghost login-buttons" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                  <div id="login-close"><i class="bi bi-x-lg"></i></div>
+                    <h1 class="login-h1">Hello, Friend!</h1>
+                    <p class="login-p">Enter your personal details and start journey with us</p>
+                    <button class="ghost login-buttons" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- login form end -->
+
+
+
+  <!-- ======= Main Section ======= -->
+  <main id="main">
+    <!-- ======= Starting of Cursor div ======= -->
+    <div id="main-cursor"></div>   <!-- End of Cursor div   -->
+    
+    <video src="bg-video.mp4" type="video/mp4" id="background-video" autoplay muted loop></video>
+    <!-- ======= Page1 Section ======= -->
+    <div id="page1">
+        <!-- ======= Starting of Cursor div ======= -->
+          <div id="cursor"></div>   <!-- End of Cursor div   -->
+        <!-- ======= Starting of Cursor-blur div ======= -->
+          <div id="cursor-blur"></div>  <!-- End of Cursor Blur div  -->
+      <div id="heading-container">
+        <h1 id="head-text-convert" data-aos="fade-right" data-aos-delay="500">CONVERT </h1>
+        <h1 id="head-text-your" data-aos="fade-left" data-aos-delay="500">YOUR</h1>
+      </div>
+      <h2 id="head-text-pdf-to" data-aos="zoom-in-up" data-aos-delay="1000">PDF TO <span class="auto-type"
+          style="color: #1ae4c0;"></span></h2>
+    </div>  <!-- End of Page1  -->
+
+    <!-- ======= Page2 Section ======= -->
+    <div id="page2">
+      <section id="about" class="about">
+        <div class="section-title container">
+          <h2>About</h2>
+          <p>About Us</p>
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+              <h3>Our Mission</h3>
+              <p class="fst-italic">
+                Our mission is to empower individuals and businesses with the tools they need to harness the full potential of PDF files. We understand that PDFs are a ubiquitous and valuable document format, but they can sometimes be challenging to work with. That's why we've developed a range of services to convert, edit, and enhance your PDFs, helping you get the most out of your documents.
+              </p>
+              <h4>Why Choose Us?</h4>
+              <ul>
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  <strong>Accuracy: </strong>Our state-of-the-art conversion algorithms ensure the highest accuracy in all our services.
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  <strong>User-Friendly: </strong>Our platform is designed with simplicity in mind, making it accessible to both novices and experts.
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  <strong>Fast Turnaround: </strong>We value your time. Our services are optimized for speed, delivering results swiftly.
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  <strong>Customer Support: </strong>Our dedicated support team is here to assist you with any questions or concerns you may have.
+                </li>
+              </ul>
+              <p>
+                Welcome to PDFShift, your one-stop solution for all your PDF handling needs. At PDFShift, we're passionate about simplifying the way you interact with PDF documents, making them more accessible and versatile than ever before.
+              </p>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End About Section -->
+    </div>  <!-- End of page2  -->
+
+    <!-- ======= Page3 Section ======= -->
+    <div id="page3">
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>Check our Services</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch disable-cursor-div" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">Text-to-Audio Conversion</a></h4>
+                <p> Our Text-to-Audio Conversion Service allows you to transform written content, such as articles, documents, or blog posts, into high-quality audio.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 disable-cursor-div" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="Converter/PDF to Audio Book/PdfToAudio.html">PDF to AudioBook</a></h4>
+                <p>Convert PDFs into audio files (MP3, WAV, etc.), enabling users to listen to documents while on the go, enhancing accessibility.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 disable-cursor-div" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Audio-to-Text Conversion</a></h4>
+                <p>With our Audio-to-Text Conversion Service, you can transcribe spoken words and audio recordings into written text. This is perfect for podcasts, interviews, webinars, and more.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 disable-cursor-div" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Audio-to-PDF Conversion</a></h4>
+                <p>Our Audio-to-PDF Conversion Service enables users to turn audio recordings into written PDF documents. This can be particularly helpful for transcribing interviews, meetings, or recording minutes.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 disable-cursor-div" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-slideshow"></i></div>
+                <h4><a href="">PDF Merging</a></h4>
+                <p>Merge multiple PDF documents into a single file, streamlining document organization and reducing clutter.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 disable-cursor-div" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">PDF to JPG</a></h4>
+                <p>Instantly transform PDF pages into JPG files, preserving document clarity and enabling easy integration into websites, emails, and graphic projects.</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Services Section -->
+    </div>  <!-- End of page3  -->
+
+    <!-- ======= Page4 Section for Testimonials Section ======= -->
+    <div id="page4"><!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="zoom-in">
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
+                  <!-- <img src="assets/img/testimonials-bg.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Rajesh Sharma</h3>
+                  <!-- <h4>Ceo &amp; Founder</h4> -->
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I absolutely love how your PDF to audio service has made my study sessions so much more accessible. It's an amazing tool for converting dense textbooks into engaging audio files. I can now multitask and absorb information on the go!
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Sushmita More</h3>
+                  <!-- <h4>Designer</h4> -->
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Your audio to text conversion service is a lifesaver for me as a journalist. It saves hours transcribing interviews. The accuracy is impressive, and the time I save is priceless.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Aaysha Kamble</h3>
+                  <!-- <h4>Store Owner</h4> -->
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I'm amazed at how well your audio to text converter performs. It accurately transcribes my recorded meetings, making it a breeze to organize and refer back to discussions. Thank you for making work more efficient!.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Gajanan Wagh</h3>
+                  <!-- <h4>Freelancer</h4> -->
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Your text to audio service has brought my blog content to life. The range of voices and customizations is fantastic. It's given my readers a whole new way to enjoy my writing.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <!-- <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""> -->
+                  <h3>Prashant Borade</h3>
+                  <!-- <h4>Entrepreneur</h4> -->
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Your PDF to audio converter has been a game-changer for me. I use it to turn my work reports into audio files, making it easier to review and catch errors. It's a productivity booster
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section><!-- End Testimonials Section -->
+  </div>
+
+    <!-- ======= Page5 Section for Team Section ======= -->
+    <div id="page5">
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>Check our Team</p>
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Yash Tayade</h4>
+                  <span>Developer & Designer</span>
+                  <span>(TY IF) Roll No. : 215154</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Mahesh Kotkar</h4>
+                  <span>Developer</span>
+                  <span>(TY IF) Roll No. : 215127</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-img">
+                  <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Rohit Kharat</h4>
+                  <span>Developer</span>
+                  <span>(TY IF) Roll No. : 215126</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <div class="member-img">
+                  <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Parth Kale</h4>
+                  <span>Developer</span>
+                  <span>(TY IF) Roll No. : 215163</span>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Team Section -->
+    </div>
+
+      <!-- ====== Page6 section for Contact ======-->
+      <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.340501112516!2d73.8627462!3d19.9521776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddbff2f7ebee35%3A0x9f2bf1dc3ff2109e!2sGovernment%20Polytechnic%20Nashik!5e0!3m2!1sen!2sin!4v1698236778469!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Government Polytechnic Nashik - 422101</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>pdfshift@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9607473987</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main> <!-- End of main Section  -->
+
+  <!-- ======= Preloader ======= -->
+  <div id="preloader"></div>
+  <!-- End of Preloader  -->
+
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6" id="footer-info-parent">
+                        <div class="footer-info">
+                            <h3>PDFShift<span>.</span></h3>
+                            <p>
+                                Government Polytechnic Nashik <br>
+                                Nashik 422 101, Maharashtra<br><br>
+                                <strong>Phone:</strong> +91 9607473987<br>
+                                <strong>Email:</strong> pdfshift@gmail.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul id="userful-links-ul">
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ's</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul id="our-services-ul">
+                          <li><i class="bx bx-chevron-right"></i> <a href="#">PDF-to-AudioBook (Speech)</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="Converter/PDF to Audio Book/PdfToAudio.html">PDF to AudioBook</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Text-to-Audio Conversion</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Audio-to-PDF Conversion</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Subscribe our Newsletter for Latest Updates</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>PDFShift</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+                <!-- Designed by <a href="https://bootstrapmade.com/">TY IF</a> -->
+                Designed by TY IF</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+
+  <!-- ======= Vendor JS Files ======= -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- ======= GSAP cdn ======= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+  integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  
+  <!-- ======= Scroll Trigger cdn ======= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+  <!-- <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script> -->
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- ======= Typed JS ======= -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- ======= My Script ======= -->
+  <script src="js/script.js"></script>
+  <script src="js/temp.js"></script>
+</body>
+
+</html>

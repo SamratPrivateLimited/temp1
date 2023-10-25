@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFShift - PDF to AudioBook Converter</title>
+
+    <!-- ======= Vendor CSS Files ======= -->
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- ======= Locomotive css cdn ======= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css">
+
+    <!-- <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+    <!-- <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+
+    <!-- ======= PdfToAudio.css  ======= -->
+    <link rel="stylesheet" href="PdfToAudio.css">
+
+    <!-- ======= style.css   ======= -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- ======= Google Fonts ======= -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ======= Starting of Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <h1 class="logo me-auto me-lg-0"><a href="../../index.html">PDFShift<span>.</span></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="converterLogo.png" alt="" class="img-fluid"></a> -->
+
+            <!-- ======= Starting of Navbar ======= -->
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="../../index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#about">About Us</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="../../index.html#FAQs">FAQs</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#team">Team</a></li>
+                    <li class="dropdown"><a href="#">
+                            <span>PDF Converters</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <!-- <li class="dropdown"><a href="#"><span>PDF Converter</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">PDF to AudioBook</a></li>
+                                    <li><a href="#">PDF to Jpeg</a></li>
+                                    <li><a href="#">PDF to Docx</a></li>
+                                    <li><a href="#">Docx to PDF</a></li>
+                                    <li><a href="#">PDF to Long Image</a></li>
+                                </ul>
+                            </li> -->
+                            <li><a href="#">PDF to AudioBook / Speech</a></li>
+                            <li><a href="#">Text to Speech / Audio</a></li>
+                            <li><a href="#">Speech / Audio to Text</a></li>
+                            <li><a href="#">Speech / Audio to PDF</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav> <!-- End of Navbar -->
+
+            <!-- <a href="#about" class="login-button scrollto">Get Started</a> -->
+            <!-- <a href="#" class="login-button scrollto" id="LoginBtn"><span>Login</span><i></i></a> -->
+
+        </div>
+    </header> <!-- End of Header -->
+
+    <!-- ======= Starting of Cursor div ======= -->
+    <!-- <div id="cursor"></div>  -->
+    <!-- End of Cursor div   -->
+
+    <!-- ======= Starting of Cursor-blur div ======= -->
+    <!-- <div id="cursor-blur"></div>  -->
+    <!-- End od Cursor-blur div -->
+
+    <!-- ======= Main Section Starts ======= -->
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>AudioBook Converter</h2>
+                    <ol>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li>PDF to AudioBook</li>
+                    </ol>
+                </div>
+            </div>
+        </section><!-- End Breadcrumbs -->
+
+        <!-- ======= PDF to AudioBook Converter Section Starts ======= -->
+        <div class="container">
+            <div id="converter-section">
+
+
+                <!-- Drag-and-drop area -->
+                <div id="drop-area">
+                    <label for="pdfInput" class="drop-container" id="dropcontainer">
+                        <span class="drop-title">Drop files here</span>
+                        or
+                        <!-- Input field to select a PDF file -->
+                        <input type="file" id="pdfInput" accept=".pdf" required>
+                    </label>
+                </div>
+
+                <button class="pushable" id="convertBtn">
+                    <span class="front">
+                        Convert to Audio
+                    </span>
+                </button>
+
+
+
+
+                <!-- <button id="previewBtn">Preview</button> -->
+            </div>
+            <!-- Display area for the PDF preview -->
+            <!-- <div id="preview">
+        <embed id="preview1" src="" type="application/pdf" width="100%" height="100%"/>
+    </div> -->
+
+            <!-- Preview of the selected PDF -->
+            <iframe id="preview" src="" frameborder="0"></iframe>
+        </div>
+
+        <!-- End Conveter Section  -->
+
+    </main><!-- End Main Section  -->
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6" id="footer-info-parent">
+                        <div class="footer-info">
+                            <h3>PDFShift<span>.</span></h3>
+                            <p>
+                                Government Polytechnic Nashik <br>
+                                Nashik 422 101, Maharashtra<br><br>
+                                <strong>Phone:</strong> +91 9607473987<br>
+                                <strong>Email:</strong> pdfshift@gmail.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul id="userful-links-ul">
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul id="our-services-ul">
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">PDF to Audio</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">PDF to Word (DOCX)</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">PDF Merging</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">PDF to JPEG</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">PDF to Image</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Subscribe our Newsletter for Latest Updates</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>PDFShift</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+                <!-- Designed by <a href="https://bootstrapmade.com/">TY IF</a> -->
+                Designed by TY IF</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <!-- ======= Preloader ======= -->
+    <!-- <div id="preloader"></div>  -->
+    <!-- End of Preloader  -->
+    <!-- 
+<script>
+    // Function to handle PDF file input
+document.getElementById('convertBtn').addEventListener('click', async function () {
+    const pdfInput = document.getElementById('pdfInput');
+    const selectedFile = pdfInput.files[0];
+
+    if (selectedFile) {
+        const fileReader = new FileReader();
+        fileReader.onload = async function (event) {
+            const pdfData = new Uint8Array(event.target.result);
+            const pdf = await pdfjsLib.getDocument({ data: pdfData }).promise;
+
+            let pdfText = '';
+
+            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                const page = await pdf.getPage(pageNum);
+                const pageText = await page.getTextContent();
+                pageText.items.forEach(item => {
+                    pdfText += item.str + ' ';
+                });
+            }
+
+            textToSpeech(pdfText);
+        };
+
+        fileReader.readAsArrayBuffer(selectedFile);
+    }
+});
+</script> -->
+
+
+    <!-- ======= Vendor JS Files ======= -->
+    <!-- <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/aos/aos.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- ======= GSAP cdn ======= -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <!-- ======= Locomotive JS cdn ======= -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+
+    <!-- <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+    <!-- <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script> -->
+    <!-- <script src="../../assets/vendor/php-email-form/validate.js"></script> -->
+
+    <!-- ======= Typed JS ======= -->
+    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
+
+    <!-- ======= PDF JS ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+
+    <!-- ======= script.js ======= -->
+    <!-- <script src="../../js/script.js"></script> -->
+
+    <!-- ======= My Script ======= -->
+    <script src="PdfToAudio.js"></script>
+
+    <!-- <script>
+        let preloader = select('#preloader');
+        if (preloader) {
+            window.addEventListener('load', () => {
+                preloader.remove()
+            });
+        }
+    </script> -->
+</body>
+
+</html>
